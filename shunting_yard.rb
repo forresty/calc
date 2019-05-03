@@ -31,3 +31,7 @@ class ShuntingYard
     output
   end
 end
+
+# tokens = [3, :+, 6, :*, 2, :/, :'(', 1, :-, 5, :')']
+# yard = ShuntingYard.new
+# p yard.build_rpn(tokens)
