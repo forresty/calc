@@ -34,9 +34,9 @@ class Calculator(ast.NodeVisitor):
     return node.n
 
 
-calc = Calculator()
-print(calc.compute('(3 + 11) * 5'))
-print(calc.compute('(+3 + 11) * 5'))
-print(calc.compute('(-3 + 11) * 5'))
-print(calc.compute('(--3 + 11) * 5'))
-print(calc.compute('(-(3 + 11)) * 5'))
+# calc = Calculator()
+# print(calc.compute('(3 + 11) * 5'))
+# print(calc.compute('(+3 + 11) * 5'))
+# print(calc.compute('(-3 + 11) * 5'))
+# print(calc.compute('(--3 + 11) * 5'))
+# print(calc.compute('(-(3 + 11)) * 5'))
