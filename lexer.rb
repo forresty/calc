@@ -15,3 +15,6 @@ class Lexer
     tokens
   end
 end
+
+# lexer = Lexer.new
+# p lexer.tokenize('(((6 + 422534 * 3) / 2 + 233) * 3 + 13) / 2')
