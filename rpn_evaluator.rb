@@ -24,3 +24,6 @@ class RPNEvaluator
     end
   end
 end
+
+# rpn = RPNEvaluator.new
+# puts rpn.ev([15, 7, 1, 1, :+, :-, :/, 3, :*, 2, 1, 1, :+, :+, :-])
