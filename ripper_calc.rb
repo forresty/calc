@@ -14,6 +14,7 @@ class Calculator
   def ev(node)
     type, _ = node
     case type
+    when :unary  then ev_unary(node)
     when :binary then ev_binary(node)
     when :paren  then ev(node[-1][0]) # ev the child of `paren` node
     when :@int   then node[1].to_i
@@ -27,6 +28,14 @@ class Calculator
     when :/ then ev(left) / ev(right)
     when :+ then ev(left) + ev(right)
     when :- then ev(left) - ev(right)
+    end
+  end
+
+  def ev_unary(node)
+    _, op, child = node
+    case op
+    when :+@ then ev(child)
+    when :-@ then -ev(child)
     end
   end
 end
